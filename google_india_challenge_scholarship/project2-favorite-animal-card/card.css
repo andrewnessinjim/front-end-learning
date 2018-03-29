@@ -1,0 +1,75 @@
+.animal-card-container {
+    width: 300px;
+    border: 8px ridge rgb(3, 44, 6);
+    border-radius: 3%;
+    padding: 10px;
+    box-shadow: 8px 8px 5px lightgray;
+    background: linear-gradient(darkgreen, lightgreen);
+}
+
+.name-circle-container {
+    z-index: 0;
+    position: relative;
+}
+
+.animal-name {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px black, -1px -1px 0px darkgreen, -1px 1px 0px darkgreen, 1px -1px 0px black;
+    z-index: 2;
+}
+
+.circle {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(lightgreen, rgb(11, 148, 11),rgb(27, 153, 27), darkgreen);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.25;
+    margin : 15px;
+}
+
+.circle-1 {
+    top:-40px;
+}
+
+.circle-2 {
+    left : 80px;
+}
+
+.circle-3 {
+    left: 160px;
+    top : -40px;
+}
+
+.circle-4 {
+    left: 240px;
+}
+
+.animal-detail-container {
+    border: 2px ridge gray;
+    /*Default padding sufficient for top and bottom*/
+    padding: 0px 10px; 
+    border-radius: 2%;
+    background: radial-gradient(rgb(85, 219, 85), lightgreen);
+}
+
+.animal-pic {
+    /*No horizontal margin, to keep the card fixed at 300px*/
+    margin: 5px 0px;
+    border-radius: 4%;
+    border: 2px solid gray;
+}
+
+.animal-interesting-fact {
+    font-style: italic;
+}
+
+.animal-list-items {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item-label {
+    font-weight: bold;
+}
