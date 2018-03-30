@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio</title>
+</head>
+<body>
+    <audio controls>
+        <!-- Browsers try to play the audio from the beginning of the list. It will stop when it find a source for which it supports playback -->
+        <source src="audio/instrumental.mp3" type="audio/mpeg">
+        <source src="audio/instrumental.ogg" type="audio/ogg">
+
+        <!--Older browsers that doesn't recognize the audio tag can still recognize this anchor tag and allow the user to download the track-->
+        <a href="audio/instrumental.mp3">Download track</a>
+    </audio>
+
+    <!-- Videos are very similar to audio -->
+    <video controls>
+        <source src="video/fish.mp4" type="video/mp4">
+        <source src="video/fish.webm" type="video/webm">
+        <source src="video/fish.ogv" type="video/ogg">
+    </video>
+</body>
+</html>
