@@ -1,0 +1,78 @@
+html,body {
+    padding: 0px;
+    margin : 0px;
+}
+
+body {
+    background-color: gray;
+    font-family: Helvetica, sans-serif;
+}
+
+.form-container {
+    max-width: 750px;
+    margin: 20px auto 0 auto;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+.form-row {
+    display: flex;
+    padding : 5px;
+    margin: 10px;
+}
+
+.form-row input {
+    flex : 1;
+}
+
+.form-row label {
+    padding-right: 10px;
+}
+
+.column-layout {
+    background-color: white;
+    display: flex;
+    margin : 40px 0;
+    line-height: 1.65;
+}
+
+.main-column {
+    flex: 3;
+    padding : 0 10px;
+    order : 2;
+}
+
+.sidebar-left {
+    flex: 1;
+    padding : 0 10px;
+    order : 1;
+}
+
+.sidebar-right {
+    flex : 1;
+    padding : 0 10px;
+    order : 3;
+}
+
+.callouts-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    /*align-items: flex-start  (This property will make the children align to the top. But default, the children are stretched to align to both top and bottom)*/
+}
+
+@media (min-width : 900px) {
+    .callouts-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.callout {
+    /*flex : 1; (flex-basis will not work if we use this)*/
+    flex-basis: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2%;
+    margin-bottom: 20px;
+}
+.callout:nth-child(1) {background-color: #c0dbe2;}
+.callout:nth-child(2) {background-color: #cdf1c3;}
+.callout:nth-child(3) {background-color: #ccb9da;}
