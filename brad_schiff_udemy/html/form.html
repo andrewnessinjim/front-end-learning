@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <!--Associating the label with the input field will make the browser aware
+            of the associatoin too. It can then focus on the associated input
+            when the user clicks on a label-->
+        <label for="displayName">Display Name:</label>
+        <input id="displayName" name="displayName" type="text">
+
+        <!--We need to assign a name attribute to the input field so that they can
+            be accessed from the backend server that needs to process the form-->
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="email">
+
+        <!--We can also nest the input tag inside the label tag to indicate the
+            association. But this method is still not well supported on screen
+            readers.-->
+        <label>
+            Birthday:
+            <input type="date" name="birthday">
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
