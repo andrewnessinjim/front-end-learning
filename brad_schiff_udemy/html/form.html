@@ -11,23 +11,88 @@
         <!--Associating the label with the input field will make the browser aware
             of the associatoin too. It can then focus on the associated input
             when the user clicks on a label-->
+        <h1>Example of text</h1>
         <label for="displayName">Display Name:</label>
         <input id="displayName" name="displayName" type="text">
 
         <!--We need to assign a name attribute to the input field so that they can
             be accessed from the backend server that needs to process the form-->
-        <label for="email">Email:</label>
-        <input id="email" type="text" name="email">
 
         <!--We can also nest the input tag inside the label tag to indicate the
             association. But this method is still not well supported on screen
             readers.-->
+        <h1>Example of date</h1>
         <label>
             Birthday:
             <input type="date" name="birthday">
         </label>
+        
+        <!--The email input type automatically validates the input format. It also
+            causes touchscreen keyboard layouts to present the @ symbol in a prominent
+            location-->
+        <h1>Example of email</h1>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email">
+        
+        <!-- This will provide telephone dialer keyboard to touch screen users-->
+        <h1>Example of telephone</h1>
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone">
 
+        <!-- Receiving muliple lines of text-->
+        <h1>Example of textarea</h1>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback"></textarea>
         <input type="submit" value="Submit">
+
+        <h1>Example of select</h1>
+        <label for="favoriteColor" id="favoriteColor">What is your favorite color?</label>
+        <select id="favoriteColor" name="favoriteColor">
+            <option>Black</option>
+            <option>White</option>
+            <option>Green</option>
+            <option>Violet</option>
+            <option>Purple</option>
+        </select>
+
+        <h1>Example of checkboxes</h1>
+        <fieldset>
+            <legend>When you enjoy studying? (check all that apply)</legend>
+            
+            <input type="checkbox" name="favoriteStudyTimes" id="earlyMorningMul">
+            <label for="earlyMorningMul">Early Morning</label>
+            
+            <input type="checkbox" name="favoriteStudyTimes" id="morningMul">
+            <label for="morningMul">Morning</label>
+
+            <input type="checkbox" name="favoriteStudyTimes" id="eveningMul">
+            <label for="eveningMul">Evening</label>
+            
+            <input type="checkbox" name="favoriteStudyTimes" id="nightMul">
+            <label for="nightMul">Night</label>
+        </fieldset>
+
+        <!--
+            1) All the radio input types that have the same "name" value belong to the same group,
+                and you can select only one option from such a group.
+            2) Clicking on an associated label will also have effect as clicking on the radio button.
+        -->
+        <h1>Example of radioboxes</h1>
+        <fieldset>
+            <legend>What is your favorite time of study?</legend>
+            
+            <input type="radio" name="favoriteStudyTime" id="earlyMorning">
+            <label for="earlyMorning">Early Morning</label>
+            
+            <input type="radio" name="favoriteStudyTime" id="morning">
+            <label for="morning">Morning</label>
+
+            <input type="radio" name="favoriteStudyTime" id="evening">
+            <label for="evening">Evening</label>
+            
+            <input type="radio" name="favoriteStudyTime" id="night">
+            <label for="night">Night</label>
+        </fieldset>
     </form>
 </body>
 </html>
