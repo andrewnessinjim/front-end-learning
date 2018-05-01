@@ -1,0 +1,43 @@
+/*This h1 rule set overrides the defaults set by the browser. This is called cascading.*/
+h1 {
+    font-size: 170%;
+    font-weight: normal;
+}
+
+/*This rule set selects only the article element. However, inheritance comes in to play here and
+all the children of this article element also inherits this rule set. Also, not all properties are
+inheritable. In this case, color property is inheritable*/
+.inheritance_article {
+    color: green;
+}
+
+/*
+Consider the below 3 rule sets
+The first rule selects all p elements inside one of the articles
+The second rule selects footer element inside the same article. But this will have to effect
+because the first rule is more specific and hence the browser will ignore the second rule.
+To override the first rule, we need to write a rule that is more specific - the third rule below.
+You can comment the third rule and observe that the second rule has no effect
+
+In general,
+1) Descendant selectors are more specific than type selectors
+2) Deep descendant selectors are more specific than shallow descendant selectors
+3) Class selectors are more specific than type or descendant selectors
+4) Descendant selectors that refer to a class are more specific than a solo class selector
+5) If two selectors have the same level of specificity, then the last in order will be followed*/
+
+.specificity_article p {
+    color: orange;
+}
+
+.specificity_article footer {
+    color: red;
+}
+
+.specificity_article footer p {
+    color: red;
+}
+
+.highlight {
+    color: purple;
+}
