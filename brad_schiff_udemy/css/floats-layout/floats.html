@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="floats.css">
+    <title>Floats</title>
+</head>
+<body>
+    <!--
+        All these boxes float to the left, and will flow to the following line if there isn't
+        sufficient space. container div is the parent here, and if all the children are floating,
+        it fails to recognize them. So the border we applied to the container gets collapsed.
+    -->
+    <div class="container">
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+    </div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem dicta quas eveniet. Mollitia impedit illo quaerat ab fugiat perspiciatis id fuga quisquam. Quisquam libero atque saepe, id nulla harum.</p>
+
+    <!--But the below container also contains a p tag, which has clear property set to both. So this
+    p tag is recognised by the parent container (because we cleared the float) and the margin is
+    correctly applied-->
+    <div class="container">
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem dicta quas eveniet. Mollitia impedit illo quaerat ab fugiat perspiciatis id fuga quisquam. Quisquam libero atque saepe, id nulla harum.</p>
+    </div>
+    
+    <!--
+        The above two containers have a dependency on one of the child element, the p tag to function
+        correctly. The below container removes that dependency so that the container elemenet can
+        do it's job independently
+    -->
+    <div class="container group">
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        <div class="floating-box">Box A</div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem dicta quas eveniet. Mollitia impedit illo quaerat ab fugiat perspiciatis id fuga quisquam. Quisquam libero atque saepe, id nulla harum.</p>
+</div> 
+</body>
+</html>
