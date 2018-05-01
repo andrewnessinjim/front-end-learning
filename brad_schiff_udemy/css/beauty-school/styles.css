@@ -12,6 +12,12 @@ header {
     padding-top: 20px;
 }
 
+/*These two properties on img ensures that the images fit the container*/
+img {
+  width: 100%;
+  height: auto;
+}
+
 header h1 {
   margin: 0;
   font-weight: normal;
@@ -102,3 +108,25 @@ nav li:hover {
   background-color: #e5e9dc;
 }
 /*End styling navigation menu*/
+
+/*Start styling image banner*/
+.image-banner {
+  position: relative;
+}
+
+.image-description {
+  color: #FFF;
+  position: absolute; /*Abosultely positioned elements will use the closest ancestor with ralative
+  positioning as the reference to position itself. If it doens't find any, it will use the browser
+  window*/
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin: 0; /*Remove the spacing between the description and bottom border of the image*/
+  padding: 10px 20px;
+}
+
+.image-banner img {
+  display: block; /*Removes stray borders at the bottom of the image*/
+}
+/*End styling image banner*/
