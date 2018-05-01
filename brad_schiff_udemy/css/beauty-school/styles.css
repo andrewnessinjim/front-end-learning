@@ -42,6 +42,7 @@ footer {
 .content-area {
  border-bottom: 3px solid #e5e9dc;
  border-top: 3px solid #e5e9dc;
+ padding: 10px 0;
 }
 
 .main-area {
@@ -88,12 +89,13 @@ nav ul {
 nav li {
   display: block;
   float: left;
-  padding: 10px;
+  padding: 10px 20px;
   border: 1px solid #e5e9dc;
 }
 
 nav  a {
   text-decoration: none;
+  color: #617140;
 }
 
 nav li:hover {
