@@ -10,7 +10,6 @@ body {
 header {
     color: #617140;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 header h1 {
@@ -21,6 +20,7 @@ header h1 {
 
 header p {
   margin: 0;
+  padding-bottom: 20px;
 }
 .container {
   width: 940px;
@@ -77,3 +77,26 @@ footer {
 .group {
   zoom: 1;
 }
+
+/*Start styling navigation menu*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+  float: left;
+  padding: 10px;
+  border: 1px solid #e5e9dc;
+}
+
+nav  a {
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #e5e9dc;
+}
+/*End styling navigation menu*/
