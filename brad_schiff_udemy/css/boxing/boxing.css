@@ -1,0 +1,36 @@
+/*
+    All the three boxes below have the same width and height set on them. But the first box appears
+    larger than the other two boxes. This is because the first box has padding and border, which
+    contributes to the overall size. The second box doesn't have padding or border, so it's size says
+    the same. But the third box is intersting, it is still the same size as box b even though it has
+    padding and border set on it. This is because box c uses a property called "box-sizing :
+    border-box". This stops the padding and border from contributing to the overall size. In other words,
+    when we use a border-box, the width and height which we specify accounts for the padding and border
+    as well.
+
+*/
+
+.box-a {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+}
+
+.box-b {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box-c {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid black;
+}
