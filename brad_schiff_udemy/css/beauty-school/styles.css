@@ -130,3 +130,46 @@ nav li:hover {
   display: block; /*Removes stray borders at the bottom of the image*/
 }
 /*End styling image banner*/
+
+/*Start styling table*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  background-color: #9baf81;
+  color: #FFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4)
+}
+
+table th,
+table td {
+  border: 1px solid #9baf81;
+  padding: 10px;
+  vertical-align: top; /*To all the cells of a row align with each other when a cell has multiple lines*/
+}
+
+/*Zebra stripping*/
+table tbody tr:nth-child(odd) {
+  background-color: #e5e9dc;
+}
+
+.col-item-name {
+  width: 60%;
+}
+
+.col-quantity,
+.col-price {
+  width: 20%;
+}
+
+/*tr:nth-child(2) (no space) will select the 2nd tr element
+  tr :nth-child(2) (with space) will select 2nd child of tr element*/
+table.grocery-list tr :nth-child(2), /*Use class names when applying ambigious styles*/
+table.grocery-list tr :nth-child(3) {
+  text-align: center;
+}
+
+/*End styling table*/
