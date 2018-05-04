@@ -30,6 +30,12 @@ body {
 header {
     color: #617140;
     padding-top: 20px;
+    /*By choosing an image that is far bigger than what we need, we're giving our design more room to
+    breath. Now, even if the header height increases, our image will still take up the increased space
+    intead of leaving open spaces*/
+    background-image: url(images/flower.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 /*These two properties on img ensures that the images fit the container*/
@@ -53,8 +59,11 @@ header p {
   margin-left: auto;
   margin-right: auto;
   background-color: #FFF;
-  padding: 40px;
+  padding-left: 40px;
+  padding-top: 15px;
   box-sizing: border-box;
+  background: url(images/color-tile.png) left bottom repeat-x,#FFF url(images/color-tile.png) left top repeat-x;
+   /*We covered the entire row by just downloading a small pic*/
 }
 
 footer {
@@ -119,11 +128,13 @@ nav li {
   border: 1px solid #e5e9dc;
 }
 
-nav  a {
+nav a {
   text-decoration: none;
   color: #617140;
 }
-
+nav li {
+  background-color: #FFF;
+}
 nav li:hover {
   background-color: #e5e9dc;
 }
@@ -260,3 +271,20 @@ input[type="submit"]:focus {
   color: #777;
 }
 /*End styling forms*/
+
+.birds {
+  background: #c2bbb1 url(images/bird.jpg) center center no-repeat;
+  text-align: center;
+  padding: 100px 0;
+  background-size: cover;
+}
+
+.birds p {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+  display: inline-block;
+  padding: 10px;
+  text-indent: 0;
+}
