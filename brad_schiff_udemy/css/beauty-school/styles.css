@@ -115,27 +115,29 @@ footer {
 }
 
 /*Start styling navigation menu*/
-nav ul {
+.site-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav li {
+.site-nav li {
   display: block;
   float: left;
   padding: 10px 20px;
   border: 1px solid #e5e9dc;
 }
 
-nav a {
+.site-nav a {
   text-decoration: none;
   color: #617140;
 }
-nav li {
+
+.site-nav li {
   background-color: #FFF;
 }
-nav li:hover {
+
+.site-nav li:hover {
   background-color: #e5e9dc;
 }
 /*End styling navigation menu*/
