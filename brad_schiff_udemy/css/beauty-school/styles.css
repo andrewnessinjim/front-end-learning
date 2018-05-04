@@ -3,10 +3,30 @@ html {
 }
 
 body {
+  /*
+  Usually used sans-serif and serif font list:
+  Helvetica, Arial, sans-serif
+  Georgia, "Times New Roman", serif
+  */
   font-family: Tahoma, sans-serif; /*Form elements do not inherit this*/
-  font-size: 87%;
+  font-size: 15px; /*We usually define a baseline size for the entire page*/
+  line-height: 1.4;
 }
 
+.main-area h1 {
+  font-size: 200%; /*We can define sizes by scaling the baseline which was set on the body tag*/
+  font-style: italic;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  text-shadow: 2px 10px 3px #999999;
+  text-transform: uppercase; /*lowercase is also supported*/
+}
+
+.main-area p {
+  font-size: medium; /*Values like small and large are also supported*/
+  text-align: justify; /*Left, right and centre are also supported*/
+  text-indent: 25px;
+}
 header {
     color: #617140;
     padding-top: 20px;
