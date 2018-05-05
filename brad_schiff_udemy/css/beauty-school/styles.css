@@ -27,6 +27,7 @@ body {
   text-align: justify; /*Left, right and centre are also supported*/
   text-indent: 25px;
 }
+
 header {
     color: #617140;
     padding-top: 20px;
@@ -54,6 +55,7 @@ header p {
   margin: 0;
   padding-bottom: 20px;
 }
+
 .container {
   width: 940px;
   margin-left: auto;
@@ -205,9 +207,7 @@ table.grocery-list tr :nth-child(2), /*Use class names when applying ambigious s
 table.grocery-list tr :nth-child(3) {
   text-align: center;
 }
-
 /*End styling table*/
-
 
 /*Start styling forms*/
 
