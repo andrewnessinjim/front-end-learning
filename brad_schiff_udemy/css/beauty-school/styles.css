@@ -291,3 +291,33 @@ input[type="submit"]:focus {
   padding: 10px;
   text-indent: 0;
 }
+
+/*Start CSS sprites*/
+.ui-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ui-menu li {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url(images/sprite.png);
+  text-indent: -9999px; 
+}
+
+.ui-home {
+  background-position: 0 -50px;
+}
+
+.ui-home:hover {
+  background-position: 50px -50px;
+}
+
+.ui-profile:hover {
+  background-position: 50px 0px;
+}
+/*End CSS sprites*/
