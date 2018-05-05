@@ -90,10 +90,11 @@ footer {
 .sidebar {
   width: 34%;
   float: left;
-  background-color: #e5e9dc;
   padding: 20px 40px;
   box-sizing: border-box;
   font-size: 85%;
+  background-color: #e5e9dc; /*For older browsers that don't support linear gradient*/
+  background-image: linear-gradient(to bottom, #e5e9dc, #FFF);
 }
 
 .fix {
