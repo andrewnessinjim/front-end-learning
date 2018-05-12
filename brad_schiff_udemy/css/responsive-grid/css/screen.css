@@ -394,3 +394,28 @@ footer {
 .group {
 	zoom: 1;
 }
+
+/*Star animation*/
+
+@keyframes slideSpin {
+	50% {
+		transform: translateX(150%) scale(0.5);
+	}
+
+	75% {
+		transform: translateX(150%) scale(0.5) rotate(180deg);
+	}
+
+	100% {
+		transform: translateX(300%) scale(1) rotate(180deg);
+	}
+}
+.star {
+	animation-name: slideSpin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	width: 25%;
+	height: auto;
+}
+/*End star animation*/
