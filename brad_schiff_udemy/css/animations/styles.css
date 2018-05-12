@@ -14,41 +14,41 @@
 
 @keyframes squareSpin {
     5% {
-        transform: translate(0, 0) rotate(360deg);
+        transform: translate(0, 0) rotate(90deg);
     }
 
     25% {
-        transform: translateX(900%) rotate(360deg);
+        transform: translateX(900%) rotate(90deg);
     }
 
     30% {
-        transform: translateX(900%) rotate(0deg);
+        transform: translateX(900%) rotate(180deg);
     }
 
     50% {
-        transform: translate(900%, 900%) rotate(0deg);
+        transform: translate(900%, 900%) rotate(180deg);
     }
 
     55% {
-        transform: translate(900%, 900%) rotate(360deg);
+        transform: translate(900%, 900%) rotate(270deg);
     }
 
     75% {
-        transform: translate(0, 900%) rotate(360deg);
+        transform: translate(0, 900%) rotate(270deg);
     }
 
     80% {
-        transform: translate(0, 900%) rotate(0deg);
+        transform: translate(0, 900%);
     }
 
     100% {
-        transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0);
     }
 }
 
 .star {
     width: 10%;
     animation-name: squareSpin;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
