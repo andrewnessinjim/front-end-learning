@@ -1,0 +1,47 @@
+.container {
+    background-color: lightgray;
+    width: 50vw;
+    margin: 0 auto;
+    height: 50vw;
+}
+
+@keyframes squareSpin {
+    5% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+
+    25% {
+        transform: translateX(900%) rotate(360deg);
+    }
+
+    30% {
+        transform: translateX(900%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(900%, 900%) rotate(0deg);
+    }
+
+    55% {
+        transform: translate(900%, 900%) rotate(360deg);
+    }
+
+    75% {
+        transform: translate(0, 900%) rotate(360deg);
+    }
+
+    80% {
+        transform: translate(0, 900%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.star {
+    width: 10%;
+    animation-name: squareSpin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
