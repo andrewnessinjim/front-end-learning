@@ -1,8 +1,15 @@
 .container {
     background-color: lightgray;
-    width: 50vw;
+    width: 90vw;
     margin: 0 auto;
-    height: 50vw;
+    height: 90vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 50vw;
+        height: 50vw;
+    }
 }
 
 @keyframes squareSpin {
