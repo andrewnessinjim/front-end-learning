@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <title>Square Spin Animation</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="source.js"></script>
 </head>
 <body>
-    <div class="container">
-        <img src="../responsive-grid/images/star.png" alt="Star image" class="star">
+    <div class="app-container">
+        <div class="star-container">
+            <img src="../responsive-grid/images/star.png" alt="Star image" class="star">
+        </div>
+
+        <div class="anim-speed-container">
+            <label for="anim-speed-input">Animation Speed</label>
+            <input type="range" id="anim-speed-input" min="1" max="60">
+        </div>
+
     </div>
 </body>
 </html>

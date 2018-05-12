@@ -1,13 +1,35 @@
-.container {
-    background-color: lightgray;
+.app-container {
+    width: 100%;
+}
+
+.star-container,
+.anim-speed-container {
     width: 90vw;
     margin: 0 auto;
+    display: block;
+}
+
+.anim-speed-container input {
+    display: block;
+    width: 100%;
+}
+.anim-speed-container {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.star-container {
     height: 90vw;
+    background-color: lightgray;
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
+    .star-container,
+    .anim-speed-container {
         width: 50vw;
+    }
+
+    .star-container {
         height: 50vw;
     }
 }
@@ -49,6 +71,5 @@
 .star {
     width: 10%;
     animation-name: squareSpin;
-    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
